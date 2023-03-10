@@ -1,0 +1,2 @@
+#!usr/bin/bash
+awk '/invalid user/ {print}' secure* | awk '{print $NF}' | head -n 10

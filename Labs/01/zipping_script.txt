@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+echo "Please enter the name of the file or directory you want to zip ?"
+read a
+echo "Please give the name to the zipped file ?"
+read b
+MYVARIABLE=${USER}_${b}.zip
+zip -r $HOME/$MYVARIABLE $HOME/cois3380/lab01/$a
